@@ -17,13 +17,17 @@ public class SmugglerService {
 	
 	private Smuggler hondo = new Smuggler(1, "Hondo","Ohnaka");
 	private Smuggler han = new Smuggler(2, "Han","Solo");
-	
+	@GET
+	@Path("test")
+	public String getSomething() {
+		return "Something";
+	}
 	@GET
 	@Path("all")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Smuggler> getAll() {
+		System.out.println("initating application");
 		List<Smuggler> smugglers = new ArrayList<Smuggler>();
-		
 		smugglers.add(hondo);
 		smugglers.add(han);
 		return smugglers;
