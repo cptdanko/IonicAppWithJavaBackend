@@ -17,16 +17,11 @@ public class SmugglerService {
 	
 	private Smuggler hondo = new Smuggler(1, "Hondo","Ohnaka");
 	private Smuggler han = new Smuggler(2, "Han","Solo");
-	@GET
-	@Path("test")
-	public String getSomething() {
-		return "Something";
-	}
+
 	@GET
 	@Path("all")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Smuggler> getAll() {
-		System.out.println("initating application");
 		List<Smuggler> smugglers = new ArrayList<Smuggler>();
 		smugglers.add(hondo);
 		smugglers.add(han);
@@ -36,7 +31,6 @@ public class SmugglerService {
 	@Path("{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String getSmuggler(@PathParam("id") int id) {
-		System.out.println("In the get smuggler function");
 		if(id == 1){
 			return "Weequay";
 		} else {
@@ -47,7 +41,6 @@ public class SmugglerService {
 	@Path("race/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String smugglerRace(@PathParam("id") int id) {
-		System.out.println("In the get smuggler function");
 		if(id == 1){
 			return "Weequay";
 		} else {
@@ -57,10 +50,6 @@ public class SmugglerService {
 	@POST
 	@Path("new")
 	public void addSmuggler(Smuggler smuggler) {
-		System.out.println("name:"+smuggler.getName());
-		System.out.println("last name:"+smuggler.getLastname());
-		System.out.println("id:"+smuggler.getId());
-		System.out.println("smuggler read to be added");
+		System.out.println("new smuggler -> name"+ smuggler.getName()+", lastname:"+smuggler.getLastname());
 	}
-	
 }
