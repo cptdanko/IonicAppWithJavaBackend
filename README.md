@@ -13,11 +13,9 @@ The Java backend has been built using,
 The recent Star Wars movie was a big hit and while not everyone may like it, I thought it may provide a slightly different context to building a Java RESTful backend for an app and hence I decided to use it.  
 
 # More details on this repo!
-I am currently writing a blog post which provides details into how to work with this repo and provide some 
-more insight into the thought process that went into building this i.e. a case study (of sorts) of how to approach building
-an app that shows the galaxy's finest smugglers.
-I hope to finish the blog post soon and it will be available on my [blog].
+Here's a [blog post] that explains this repo in greater detail. The blog post aims to make learning how to build a Java REST backend more interesting by telling a story of a developer who is asked to build it when he has no experience with Jersey. The post provides details on the developer's approach on how to build a solution and a list of some of the useful tutorials he comes across on his journey to learn how to build a Java REST backend with Jersey.
 
+[blog post]: http://captaindanko.blogspot.com.au/2016/02/java-restful-backend-for-app-about.html
 [Jersey]: https://jersey.java.net/
 [Eclipse]: https://eclipse.org/
 [Tomcat 7]: http://tomcat.apache.org/tomcat-7.0-doc/
