@@ -1,0 +1,10 @@
+{
+  "name": "proxy-example",
+  "app_id": "myIonicApp",
+  "proxies": [
+    {
+        "path":"/api/",
+        "proxyUrl": "http://localhost:8080/AppBackend/rest/"
+    }
+  ]
+}
